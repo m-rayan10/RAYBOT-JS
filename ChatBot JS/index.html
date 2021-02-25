@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHATBOT</title>
+    <style>
+        body{
+            margin-top:100px;
+            margin-left: 400px; 
+            width: 600px;
+            border:3px solid black;
+            text-align: center;
+        }
+        h1{
+            color: red;
+        }
+
+        #chat{
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        var know = {
+            "assalamualaikum":"walekum salam",
+            "hi":"Hello",
+            "hello":"Hey",
+            "hey":"Hiii",
+            "how are you":"Iam fine, what about YOU",
+            "i am good":"Nice to hear that",
+            "what is your name":"Iam RAYBOT",
+            "your name":"Iam RAYBOT",
+            "who are you":"Iam RAYBOT, your virtual assistant for now",
+            "who created you":"Mohammed Rayan created me on feb 25 2021",
+            "bye":"It was nice talking to you",
+            "what can you do":"I can only suggest you some good songs & movies for the time being",
+            "suggest songs":"perfect <br> rude",
+            "suggest movies":"shutter island <br>blah blah<br>blah blah"
+
+        };
+        function talk() {
+             var user =document.getElementById("user") .value;
+             document.getElementById("chat").innerHTML +="You: "+user+"<br>";
+            if(user in know){
+                document.getElementById("chat").innerHTML +="Bot: "+ know[user]+"<br><br>";
+            } else{
+                document.getElementById("chat").innerHTML+="PLEASE Ask me something that I know<br><br>";}}
+    </script>
+</head>
+<body>
+<h1>ChatBot<br></h1>
+<div id="chat"><hr></div>
+<div style="text-align: center;"><input id="user" type="text" onkeydown="if(event.keyCode == 13){talk()}"></div>
+<h2>HELLO, I AM <span style="color: seagreen">RAYBOT!!!</span><br> ASK ME SOME QUESTIONS.</h2>
+<pre>Note: Check your CAPS key use only lowercase letters.<br>RAY Thank You.</pre>
+</body>
+</html>
