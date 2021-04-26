@@ -1,7 +1,7 @@
 # RAYBOT-JS
 
 
-Here are some questions you can ask to this chatbot, remmeber you only ask these questions if you wanna add some more questions feel free to contribute.
+Here are some questions you can ask to this chatbot, remember you only ask these questions if you wanna add some more questions feel free to contribute.
 THANK YOU
 
             assalamualaikum
